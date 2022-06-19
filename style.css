@@ -168,6 +168,7 @@ input:focus{
         margin: auto;
         text-align: center;
         margin-bottom: 20px;
+        
    
         
     
@@ -182,7 +183,7 @@ input:focus{
 
     .first p{
         font-size: 10px;
-        padding-left: 85px;
+        padding-left: 89px;
         padding-right: 85px;  
         font-weight:var(--weight4);
     }
@@ -190,14 +191,25 @@ input:focus{
     .second{
         width: 100%;
         margin: auto;
+        
     }
     .mini{
-       width: 45%;
+       width: 90%;
+    }
+    .mini p{
+        padding-left: 100px;
+        padding-right: 100px;
+        
     }
 
     fieldset{
-        width: 45%;
+        width:90%;
         margin-bottom: 10px;
     }
+    form p{
+        padding-left: 70px;
+        padding-right: 80px;
 
+    }
+   
 }
