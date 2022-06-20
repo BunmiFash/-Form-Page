@@ -26,7 +26,7 @@
 }
 body{
     font-family: var(--family);
-     font-size: var(--fontsize);
+     font-size: var(--fontsize1);
     color: var(--white);
  
     
@@ -130,7 +130,7 @@ input:focus{
     padding:8px;
     background-color: var(--green);
     color: var(--white);
-    font-size: var(--padding2);
+    font-size: var(--fontsize1);
     font-weight: var(--weight4);
     border: none;
     border-radius:var(--radius2);
@@ -138,15 +138,144 @@ input:focus{
 }
 
 /* MEDIA QUERY */
-@media screen and (max-width:1440px) {
+@media (max-width:1440px) and (min-width:1001px) {
     main{
         width:100%;
         margin:0
     }
+    .first{
+        width: 50%;
+    }
+    .first h3{
+       font-size: 40px;
+       padding-left:15% ;
+       padding-right: 15%;
+    }
+    .first p{
+        font-size:var(--fontsize1);
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .second{
+        width: 50%;
+    }
+    .mini {
+        width:80% ;
+    }
+    .mini p{
+        font-size: var(--fontsize1);
+    }
+    fieldset{
+        width: 80%;
+    }
+    form{
+        width: 90%;
+    }
+    input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    form p{
+        font-size: var(--fontsize1);
+        padding-bottom: 15px;
+        padding-top: 15px;
+     
+    }
+}
+
+@media (max-width:1000px) and (min-width:601px) {
+      .first h3{
+        font-weight: var(--weight3);
+        padding-left:30%;
+        padding-right: 30%;
+    }
+    .first p{
+        font-size: var(--fontsize1);
+        padding-left: 30%;
+        padding-right: 5%;
+       
+    }
+
+    .second{
+        width: 50%;
+}
+
+    .mini{
+        width: 80%;
+    }
+    .mini p{
+        font-size: var(--fontsize1);
+    }
+    fieldset{
+        width: 80%;
+    }
+
+
+    form p{
+        font-size: var(--fontsize1);
+    }
+
+}
+
+@media (max-width:600px) and (min-width:376px) {
+    body{  
+        background-image: url('bg-intro-mobile.png');
+        background-color: var(--red);
+        background-size: cover;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top:0;
+        margin-bottom: 0;
+        font-size: var(--fontsize1);
+       
+     
+    }
+    .first{
+        width:100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .first h3{
+        margin-bottom: 15px; 
+        padding-left: 30%;
+        padding-right: 30%; 
+        padding-top: 20px;
+        font-weight: var(--weight4);  
+    }
+    .first p{
+        font-size: 16px;
+        padding-left: 10%;
+        font-weight:var(--weight4);
+    }
+
+    .second{
+        width: 100%;
+        margin: auto;
+        margin-top: 0;  
+    }
+    .mini p{
+        font-size: var(--fontsize1);
+    }
+    input {
+        margin-top: 10px;
+    }
+
+    form p{
+        font-size: var(--fontsize1);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
     
 }
 
-@media screen and (max-width:375px) {
+@media (max-width:375px) {
 
     body{  
         background-image: url('bg-intro-mobile.png');
@@ -156,10 +285,10 @@ input:focus{
     main{
         display: flex;
         flex-direction: column;
-        height: auto;
         margin: auto;
         margin-top:0;
         margin-bottom: 0;
+        font-size: var(--fontsize1);
        
      
     }
@@ -167,24 +296,20 @@ input:focus{
         width:100%;
         margin: auto;
         text-align: center;
-        margin-bottom: 20px;
-        
-   
-        
-    
     }
+
     .first h3{
         margin-bottom: 10px; 
-        padding-left: 100px;
-        padding-right: 100px; 
+        padding-left: 15%;
+        padding-right: 15%; 
         padding-top: 20px;
         font-weight: var(--weight4);  
     }
 
     .first p{
-        font-size: 10px;
-        padding-left: 89px;
-        padding-right: 85px;  
+        font-size: 16px;
+        padding-left: 10%;
+        padding-right:10%;  
         font-weight:var(--weight4);
     }
 
@@ -197,19 +322,29 @@ input:focus{
        width: 90%;
     }
     .mini p{
-        padding-left: 100px;
-        padding-right: 100px;
+        font-size: var(--fontsize1);
+       padding-left: 15%;
+       padding-right: 15%;
+      
         
     }
 
     fieldset{
         width:90%;
-        margin-bottom: 10px;
+        height:50vh;
+    }
+    input{
+        margin-top: 10px;
+    }
+    form{
+        height: 100%;
+        
     }
     form p{
-        padding-left: 70px;
-        padding-right: 80px;
-
+        font-size: var(--fontsize1);
+        padding:0;
     }
+
+ 
    
 }
